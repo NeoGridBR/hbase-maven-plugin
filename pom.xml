@@ -241,19 +241,6 @@
     </plugins>
   </reporting>
 
-  <distributionManagement>
-    <repository>
-      <id>kiji-maven</id>
-      <name>kiji-maven-releases</name>
-      <url>https://repo.wibidata.com/artifactory/kiji-packages</url>
-    </repository>
-    <snapshotRepository>
-      <id>kiji-maven</id>
-      <name>kiji-maven-snapshots</name>
-      <url>https://repo.wibidata.com/artifactory/kiji-packages</url>
-    </snapshotRepository>
-  </distributionManagement>
-
   <scm>
     <connection>${scm.connection}</connection>
     <url>${scm.connection}</url>
