@@ -46,7 +46,7 @@
     <maven.compiler.source>${java.version}</maven.compiler.source>
     <maven.compiler.target>${java.version}</maven.compiler.target>
 
-    <scm.connection>scm:git:ssh://git@github.com/kijiproject/hbase-maven-plugin.git</scm.connection>
+    <scm.connection>scm:git:ssh://git@github.com/NeoGridBR/hbase-maven-plugin.git</scm.connection>
     <hadoop.version>2.0.0-mr1-cdh4.1.2</hadoop.version>
     <hbase.version>0.92.1-cdh4.1.2</hbase.version>
     <guava.version>11.0.2</guava.version>
@@ -241,54 +241,10 @@
     </plugins>
   </reporting>
 
-  <distributionManagement>
-    <repository>
-      <id>kiji-maven</id>
-      <name>kiji-maven-releases</name>
-      <url>https://repo.wibidata.com/artifactory/kiji-packages</url>
-    </repository>
-    <snapshotRepository>
-      <id>kiji-maven</id>
-      <name>kiji-maven-snapshots</name>
-      <url>https://repo.wibidata.com/artifactory/kiji-packages</url>
-    </snapshotRepository>
-  </distributionManagement>
-
   <scm>
     <connection>${scm.connection}</connection>
     <url>${scm.connection}</url>
     <developerConnection>${scm.connection}</developerConnection>
   </scm>
-
-  <repositories>
-    <repository>
-      <id>kiji-repos</id>
-      <name>kiji-repos</name>
-      <url>https://repo.wibidata.com/artifactory/kiji</url>
-    </repository>
-    <repository>
-      <id>kiji-nightly</id>
-      <name>kiji-nightly</name>
-      <url>https://repo.wibidata.com/artifactory/kiji-nightly</url>
-    </repository>
-  </repositories>
-
-  <profiles>
-    <profile>
-      <id>kiji-nightly</id>
-      <distributionManagement>
-        <repository>
-          <id>kiji-nightly</id>
-          <name>kiji-nightly-releases</name>
-          <url>https://repo.wibidata.com/artifactory/kiji-nightly</url>
-        </repository>
-        <snapshotRepository>
-          <id>kiji-nightly</id>
-          <name>kiji-nightly-snapshots</name>
-          <url>https://repo.wibidata.com/artifactory/kiji-nightly</url>
-        </snapshotRepository>
-      </distributionManagement>
-    </profile>
-  </profiles>
 
 </project>
