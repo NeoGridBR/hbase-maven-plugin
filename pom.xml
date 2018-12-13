@@ -20,7 +20,7 @@
 
   <groupId>org.kiji.maven.plugins</groupId>
   <artifactId>hbase-maven-plugin</artifactId>
-  <version>1.0.10-cdh4-SNAPSHOT</version>
+  <version>1.0.10-SNAPSHOT</version>
   <packaging>maven-plugin</packaging>
 
   <name>hbase-maven-plugin</name>
@@ -46,7 +46,7 @@
     <maven.compiler.source>${java.version}</maven.compiler.source>
     <maven.compiler.target>${java.version}</maven.compiler.target>
 
-    <scm.connection>scm:git:ssh://git@github.com/kijiproject/hbase-maven-plugin.git</scm.connection>
+    <scm.connection>scm:git:ssh://git@github.com/NeoGridBR/hbase-maven-plugin.git</scm.connection>
     <hadoop.version>2.0.0-mr1-cdh4.1.2</hadoop.version>
     <hbase.version>0.92.1-cdh4.1.2</hbase.version>
     <guava.version>11.0.2</guava.version>
